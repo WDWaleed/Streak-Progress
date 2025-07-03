@@ -5,6 +5,6 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/vite-deploy-demo/",
+  base: "Streak-Progress/vite-deploy-demo/",
 });
 import { resolve } from "path";
