@@ -40,9 +40,9 @@ function App() {
   }, [progressPercent]);
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center bg-slate-800">
+    <div className="flex h-screen flex-col items-center justify-center bg-slate-800 px-4">
       {/* Head and day count */}
-      <div className="mb-2 flex w-3/5 max-w-[700px] items-center justify-between">
+      <div className="mb-2 flex w-full max-w-[700px] items-center justify-between sm:w-3/5">
         {/* Head */}
         <h1 className="text-left text-xl font-bold text-gray-300">
           21-Day Streak
@@ -65,7 +65,7 @@ function App() {
         </div>
       </div>
       {/* Progress bar container */}
-      <div className="flex w-3/5 max-w-[700px] items-center justify-between gap-4">
+      <div className="flex w-full max-w-[700px] items-center justify-between gap-4 sm:w-3/5">
         <div className="h-10 w-full border-3 border-teal-400 p-1">
           <div className="progress-bar" style={{ width: `${width}%` }}></div>
         </div>
