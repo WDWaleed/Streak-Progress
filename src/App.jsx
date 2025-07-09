@@ -40,7 +40,7 @@ function App() {
   }, [progressPercent]);
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center bg-slate-800 px-4">
+    <div className="relative flex h-screen flex-col items-center justify-center bg-slate-800 px-4">
       {/* Head and day count */}
       <div className="mb-2 flex w-full max-w-[700px] items-center justify-between sm:w-3/5">
         {/* Head */}
@@ -72,6 +72,12 @@ function App() {
         <p className="min-w-[55px] text-center text-xl font-medium tracking-wide text-emerald-400">
           {progressPercent}%
         </p>
+      </div>
+      <div className="absolute bottom-12 left-1/2 flex -translate-x-1/2 transform flex-col items-center">
+        <img
+          src="https://count.getloli.com/@hitCounter?name=hitCounter&theme=sketch-1&padding=16&offset=0&align=top&scale=1&pixelated=1&darkmode=auto"
+          alt="Hit Counter"
+        />
       </div>
     </div>
   );
